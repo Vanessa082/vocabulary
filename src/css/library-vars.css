@@ -249,7 +249,6 @@ leaving room for semantic and accessible implementation choices  */
     --icon-sprite: var(--fa-mastodon);
 }
 
-
 /* attach an icon to an existing element with a :before */
 .icon-attach:before {
     display: inline-block;

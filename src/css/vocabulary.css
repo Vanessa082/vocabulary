@@ -818,7 +818,6 @@ body > header .masthead .identity-logo {
     height: 50px;
     width: 191px;
 
-
     /* allows for color manipulation of svg */
     background-color: black;
     -webkit-mask-image: url('./../svg/cc/logos/cc/logomark.svg');
@@ -1081,7 +1080,6 @@ body > header .explore-panel aside .identity-logo {
     height: 50px;
     width: 191px;
 
-
     /* allows for color manipulation of svg */
     background-color: white;
     -webkit-mask-image: url('./../svg/cc/logos/cc/logomark.svg');
@@ -1283,7 +1281,6 @@ body > footer .identity-logo {
     vertical-align: bottom;
     height: 50px;
     width: 191px;
-
 
     /* allows for color manipulation of svg */
     background-color: white;
@@ -1783,7 +1780,6 @@ body > footer .license svg {
     grid-column-start: 2;
 
     font-size: .9em;
-
 }
 
 .person-page main > header p {
