@@ -27,3 +27,61 @@ span.distinct {
 main ul li {
     margin-bottom: .5em;
 }
+
+/* General button styles */
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    display: none; /* Initially hidden */
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 18px;
+    cursor: pointer;
+    transition: opacity 0.4s ease;
+    text-decoration: none;
+    opacity: 0; /* Initial opacity set to 0 */
+}
+
+/* Media query for larger screens */
+@media (min-width: 768px) {
+    /* Add this to create a long page for demo purposes */
+    body:after {
+      content: "";
+      display: block;
+      height: 200vh; /* Making sure there's enough space to scroll */
+    }
+
+    .scroll-to-top {
+      display: block; /* Make the button visible on larger screens */
+    }
+
+    /* Visibility based on scrolling: using CSS pseudo-classes */
+    body:has(.scroll-to-top:focus-visible),
+    body:has(.scroll-to-top:hover) {
+      opacity: 1;
+    }
+
+    /* Workaround for browsers without :has() support */
+    html:focus-within .scroll-to-top,
+    body:focus-within .scroll-to-top {
+      opacity: 1;
+    }
+
+    /* Simple visibility control after scroll */
+    body {
+      position: relative;
+    }
+}
+
+.scroll-to-top:focus {
+    outline: 2px solid yellow; /* Accessibility: visible focus state */
+}
+
+html {
+    scroll-behavior: smooth; /* Smooth scrolling */
+}
